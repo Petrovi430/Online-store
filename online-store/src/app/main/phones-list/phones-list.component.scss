@@ -1,0 +1,12 @@
+.book-list .thumbnail {
+  padding: 0;
+  overflow: hidden;
+  img {
+    width: 100%;
+    display: inline-block!important;
+  }
+  .itemButton {
+    margin-top: 20px;
+    text-align: center;
+  }
+}

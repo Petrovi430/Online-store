@@ -1,0 +1,30 @@
+<div>
+  <div class="books row">
+    <div class="col-sm-4 col-lg-4 col-md-4 book-list" *ngFor="let phone of phones">
+      <div class="thumbnail">
+        <img class="img-thumbnail" src="../../../../assets/images/{{phone.image}}" alt="Apple iPhone 5c">
+        <div class="caption">
+          <h4 class="pull-right">{{phone.price | currency}}</h4>
+          <h4>
+            <a href="/phones/1">{{phone.name}}</a>
+          </h4>
+          <p>{{phone.description}}</p>
+          <p class="itemButton">
+            <button class="btn btn-primary">Buy Now!</button>
+            <a class="btn btn-default" href="/phones/1">More info</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <button
+        class="pull-right btn btn-primary"
+        (click)="loadMoreFunc()"
+      >
+        Load More
+      </button>
+    </div>
+  </div>
+</div>

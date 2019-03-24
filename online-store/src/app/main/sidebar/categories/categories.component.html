@@ -1,0 +1,7 @@
+<div class="well">
+  <h4>Brand</h4>
+  <div class="list-group" (click)="getCategory($event)">
+    <button class="list-group-item active">All</button>
+    <button class="list-group-item" *ngFor="let category of categories">{{category.name}}</button>
+  </div>
+</div>
